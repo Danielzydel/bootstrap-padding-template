@@ -25,9 +25,17 @@
 </div>
 <div></div>
 <p>
+red centered text
+</p>
+
+<style type="text/css">
 p {
-    color: red;
+    color: #F00; /* no no, must not use named colors.  hex or rgba (#ishex) rgba(255, 255, 255, 0.5) red/green/blue/alpha */
     /* Just seeing how some red centered text looks like in a css file.  I built this in vim after all! */
     text-align: center;
+    display:block; /* inline, inline-block, block, table, table-row, table-cell and others we use less */
+    margin-left:auto; /* centers a block element */
+    margin-right:auto; /* well along with right auto */
+    width:25%; /* to allow the margins to be auto, the width must be less than the parent container (the body here) */
 }
-</p>
+</style>
